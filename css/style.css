@@ -114,6 +114,7 @@
 .upsell {
   background: url(/images/background.png);
   background-size: cover;
+  margin-bottom: 4rem;
 }
 
 .upsell-container {
@@ -133,4 +134,25 @@
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 150%;
+}
+
+/* ---press--------------------- */
+
+.press {
+  margin: 0 2rem;
+  margin-bottom: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.press-image {
+  height: 2.6rem;
+}
+
+.press-link {
+  max-width: 48%;
+  display: block;
+  margin-bottom: 1.65rem;
 }
