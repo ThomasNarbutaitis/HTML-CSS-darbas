@@ -14,3 +14,32 @@ body {
 p {
   line-height: 83%;
 }
+
+.secondary-heading {
+  font-weight: 500;
+  color: #111111;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.primary-text {
+  color: #555555;
+  font-size: 1.25rem;
+  font-weight: normal;
+  line-height: 150%;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 0.75rem;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}

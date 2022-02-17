@@ -88,14 +88,6 @@
   margin-bottom: 1.5rem;
 }
 
-.ht-text {
-  color: #555555;
-  font-size: 1.25rem;
-  font-weight: normal;
-  line-height: 150%;
-  margin-bottom: 1.5rem;
-}
-
 .cta-btn {
   color: #111111;
   background-color: transparent;
@@ -123,13 +115,6 @@
   width: 22.75rem;
 }
 
-.upsell-heading {
-  font-weight: 500;
-  color: #111111;
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .upsell-text {
   font-weight: 400;
   font-size: 1.25rem;
@@ -155,4 +140,55 @@
   max-width: 48%;
   display: block;
   margin-bottom: 1.65rem;
+}
+
+/* ---SHOWCASE--------------------------- */
+
+.showcase {
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+  overflow: hidden;
+}
+
+.showcase-text-wrapper {
+  width: 22.75rem;
+}
+
+.article {
+  background-color: #eeeeee;
+  display: inline-block;
+  border-radius: 16px;
+  margin-right: 2.5rem;
+  /* height: 400px; */
+  min-width: 290px;
+}
+
+.article-wrapper {
+  display: flex;
+}
+
+.article-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.right-side {
+  text-align: right;
+}
+
+article li:first-child {
+  color: #ff8139;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.right-side li:first-child {
+  color: #111111;
+}
+
+.article li:nth-child(2) {
+  font-size: 20px;
+  font-weight: 500;
 }
