@@ -1,5 +1,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
+@import url(/css/reset.css);
 @import url(/css/common.css);
 /* ---HEADER--------------------- */
 
@@ -50,4 +51,59 @@
 
 .menu-lines::after {
   transform: translateY(-9px);
+}
+
+/* ---HERO-------------------------------- */
+
+.hero {
+  margin-left: 2rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+
+.hero-img {
+  height: 17.375rem;
+  position: absolute;
+  top: -34px;
+  right: -134px;
+}
+
+.hero-text {
+  width: 17.125rem;
+}
+
+.ht-subheading {
+  text-transform: uppercase;
+  color: #ff3998;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+.ht-heading {
+  color: #111111;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.ht-text {
+  color: #555555;
+  font-size: 1.25rem;
+  font-weight: normal;
+  line-height: 150%;
+  margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+  color: #111111;
+  font-weight: 600;
+  width: 11.75rem;
+  font-size: 1.25rem;
+  border: 3px solid #ff3998;
+  border-radius: 10px;
+  line-height: 1.875rem;
+  cursor: pointer;
+  padding: 1.375rem;
 }
