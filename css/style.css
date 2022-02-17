@@ -98,6 +98,7 @@
 
 .cta-btn {
   color: #111111;
+  background-color: transparent;
   font-weight: 600;
   width: 11.75rem;
   font-size: 1.25rem;
@@ -106,4 +107,30 @@
   line-height: 1.875rem;
   cursor: pointer;
   padding: 1.375rem;
+}
+
+/* ---UPSELL-------------------- */
+
+.upsell {
+  background: url(/images/background.png);
+  background-size: cover;
+}
+
+.upsell-container {
+  padding: 2rem 2rem;
+  padding-top: 7.625rem;
+  width: 22.75rem;
+}
+
+.upsell-heading {
+  font-weight: 500;
+  color: #111111;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.upsell-text {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 150%;
 }
