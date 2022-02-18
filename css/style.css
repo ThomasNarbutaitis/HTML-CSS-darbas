@@ -5,6 +5,10 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
 /* ---HEADER--------------------- */
 
+.header-container {
+  margin: 2rem;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -59,7 +63,7 @@
 .hero {
   margin-left: 2rem;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   margin-bottom: 5rem;
 }
 
@@ -80,6 +84,7 @@
   letter-spacing: 0.1em;
   font-weight: bold;
   margin: 1.5rem 0;
+  font-size: 16px;
 }
 
 .primary-heading {
@@ -96,7 +101,7 @@
   width: 11.75rem;
   font-size: 1.25rem;
   border: 3px solid #ff3998;
-  border-radius: 10px;
+  border-radius: 99px;
   line-height: 1.875rem;
   cursor: pointer;
   padding: 1.375rem;
@@ -108,39 +113,38 @@
   background: url(/images/background.png);
   background-size: cover;
   margin-bottom: 4rem;
+  max-width: 100%;
 }
 
 .upsell-container {
   padding: 2rem 2rem;
+  padding-right: 0;
   padding-top: 7.625rem;
   width: 22.75rem;
 }
 
 .upsell-text {
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 150%;
 }
 
 /* ---press--------------------- */
 
 .press {
-  margin: 0 2rem;
-  margin-bottom: 3.5rem;
+  margin: 4rem 2rem 3.5rem 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 }
 
 .press-image {
   height: 2.6rem;
 }
 
-.press-link {
-  max-width: 48%;
-  display: block;
-  margin-bottom: 1.65rem;
+.press-link:nth-child(4) {
+  display: none;
 }
 
 /* ---SHOWCASE--------------------------- */
@@ -160,8 +164,11 @@
   display: inline-block;
   border-radius: 16px;
   margin-right: 2.5rem;
-  /* height: 400px; */
   min-width: 290px;
+}
+
+.article:last-child {
+  margin-right: 0;
 }
 
 .article-wrapper {
@@ -223,9 +230,9 @@ article li:first-child {
 
 /* ---FOOTER------------------- */
 
-.footer-container {
+.footer {
   margin: 5rem 0 6.5625rem 2rem;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .social,
@@ -290,6 +297,169 @@ article li:first-child {
   color: #555555;
 }
 
-.copy {
+.footer-bottom {
   color: #999999;
+}
+
+.footer-bottom p:last-child {
+  display: none;
+}
+
+/* ___MEDIA QUERIES__________________________________ */
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  /* -header- */
+
+  .header-container {
+    margin: 0;
+    margin-top: 70px;
+  }
+
+  .header {
+    margin-bottom: 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav li {
+    margin-bottom: 0;
+    margin-right: 28px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .nav li:last-child {
+    margin-right: 0;
+  }
+
+  .nav-link:hover {
+    color: #ff3998;
+  }
+
+  /* -hero- */
+
+  .hero-img {
+    height: 650px;
+    top: 15%;
+    right: -10%;
+  }
+
+  .hero-text {
+    min-width: 55%;
+  }
+
+  .hero-heading {
+    font-size: 96px;
+  }
+
+  .hero {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 182px;
+    padding-top: 182px;
+  }
+
+  /* -press- */
+
+  .press {
+    margin: 120px 0;
+  }
+
+  .press-link:nth-child(4) {
+    display: block;
+  }
+
+  /* -showcase- */
+
+  .showcase {
+    margin-bottom: 120px;
+    margin-left: 0;
+  }
+
+  .showcase-text-wrapper {
+    width: 100%;
+  }
+
+  .article {
+    max-width: 30%;
+    flex: 1;
+    min-width: 100px;
+  }
+
+  /* -footer-upsell- */
+
+  .footer-upsell-img {
+    height: 467px;
+    bottom: 0;
+    right: 5%;
+  }
+
+  .footer-upsell-text {
+    margin-bottom: 120px;
+    max-width: 57%;
+  }
+
+  .fut-heading {
+    font-size: 56px;
+  }
+
+  /* -footer- */
+
+  .footer {
+    margin: 0;
+  }
+
+  .divider {
+    margin-bottom: 120px;
+  }
+
+  .wide {
+    display: none;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+
+  .social {
+    max-width: 50%;
+  }
+
+  .info {
+    min-width: 50%;
+    justify-content: space-between;
+  }
+
+  .info-box {
+    min-width: 20%;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 71px;
+  }
+
+  .footer-bottom p:last-child {
+    display: block;
+  }
 }

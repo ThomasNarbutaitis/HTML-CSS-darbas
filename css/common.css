@@ -1,7 +1,3 @@
-.container {
-  margin: 2rem;
-}
-
 html {
   font-size: 16px;
 }
@@ -24,7 +20,7 @@ p {
 
 .primary-text {
   color: #555555;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: normal;
   line-height: 150%;
   margin-bottom: 1.5rem;
